@@ -1,0 +1,104 @@
+1. Insert Sort projesi
+
+1. Adım:
+
+
+[22,27,16,2,18,6] 
+
+
+6 farklı sayıdan en küçüğü olan 2'yi en başa yerleştiririz. (6 işlem)
+
+[2,22,27,16,18,6]
+
+
+Kalan 5 farklı sayıdan en küçüğü 6'yı 2'nin yanına yerleştiririz. (5 işlem)
+
+[2,6,22,27,16,18]
+
+
+Kalan 4 farklı sayıdan en küçüğü 16'yı 6'nın yanına yerleştiririz. (4 işlem)
+
+[2,6,16,22,27,18]
+
+
+Kalan 3 farklı sayıdan en küçüğü 18'i 16'nın yanına yerleştiririz. (3 işlem)
+
+[2,6,16,27,22,18]
+
+
+Kalan 2 farklı sayıdan en küçüğü 18'i 16'nın yanına yerleştiririz. (2 işlem)
+
+[2,6,16,18,27,22]
+
+Kalan sayılardan en küçüğünü 18'in yanına 22 olarak yerleştiririz. (1 işlem)
+
+[2,6,16,18,22,27]
+
+
+
+
+
+2. Adım Big O Notation
+
+[2,6,16,18,22,27]  dizisini yerleştirirken her 6 dan başlayıp teker teker 
+her sayıyı sorguladık. 
+
+6+5+4+3+2+1 = 21 işlem yaptık. (n.(n+1))/2 = n²+n ifadesine ulaştık. 
+
+Big O(n²)
+
+
+
+
+
+
+3. Adım Time Complexity 
+
+[2,6,16,18,22,27]  
+
+Worst Case: Aradığımız sayının 27 olması 
+Best Case: Aradığımız sayının 2 olması 
+Average Case: Aradığımız sayının 16 veya 18 olması
+
+
+
+
+
+4. Dizideki 18 sayısı hangi case kapsamına girmektedir ?
+
+Dizideki 18 sayısı Average Case'e girmektedir.
+
+
+
+
+
+
+
+
+
+5.  [7,3,5,8,2,9,4,15,6] Dizisinin Insert Sort'a göre diziminin 4 adımı
+
+
+
+
+9 sayıdan en küçüğü olan '2' sıranın en başına konur. Bunun için 9 farklı sayı ile sorgulama yapılır.
+
+[2,7,3,5,8,9,4,15,6]
+
+
+
+Kalan 8 sayıdan en küçüğü olan 3 sayısı 2 sayısının yanına konur. Bunun için 8 farklı sayı ile sorgulama yapılır.
+
+[2,3,7,5,8,9,4,15,6]
+
+
+
+Kalan 7 sayıdan en küçüğü olan 4 sayısı 3 sayısının yanına konur. Bunun için 7 farklı sayı ile işlem yapılır.
+
+[2,3,4,7,5,8,9,15,6]
+
+
+
+Kalan 6 sayıdan en küçüğü olan 5 sayısı 4 sayısının yanına konur. Bunun için 6 farklı sayı ile işlem yapılır.
+
+[2,3,4,5,7,8,9,15,6]
